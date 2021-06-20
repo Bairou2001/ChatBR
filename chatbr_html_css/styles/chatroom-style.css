@@ -1,0 +1,247 @@
+html {
+  min-height: 650px;
+}
+
+body {
+  padding-bottom: 10px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5%;
+  font-family: myNotoBold;
+  font-size: 2.5em;
+}
+
+main {
+  height: 95%;
+}
+
+#chat-window {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  background-color: rgb(33, 41, 59);
+  border-radius: 10px;
+}
+
+#head-section {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(23, 29, 43);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#chatroom {
+  font-size: larger;
+  font-weight: bold;
+}
+
+#button-leave {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgb(37, 56, 99);
+  border-radius: 10px;
+}
+
+#button-leave:hover {
+  background-color: rgb(60, 81, 131);
+}
+
+#body-section {
+  display: flex;
+  min-height: 400px;
+  width: 100%;
+  flex-direction: row;
+}
+#message-text {
+  background-color: rgb(49, 58, 97);
+  font-family: myNoto;
+  color: rgb(235, 231, 243);
+  border-radius: 5px;
+  padding: 6px;
+}
+
+#bottom-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.send-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#left-sidebar {
+  width: max(150px, 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+#text-area {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(44, 53, 71);
+}
+
+#users {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user-title {
+  color: rgb(111, 130, 218);
+  font-weight: bolder;
+  font-size: larger;
+  margin-bottom: 5px;
+}
+
+#list-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user {
+  margin: 2px;
+  color: rgb(187, 196, 233);
+}
+
+#list-messages {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  width: 100%;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(57, 70, 97);
+  padding: 7px;
+  border-radius: 15px;
+}
+
+.message-content {
+  overflow-wrap: break-word;
+}
+
+#list-messages {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#list-messages::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(107, 124, 161);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(28, 38, 59);
+  height: 2px;
+  border-radius: 10px;
+}
+
+#users {
+  height: 100%;
+  overflow-y: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /*Firefox */
+}
+/*chrome */
+#users::-webkit-scrollbar {
+  display: none;
+}
+
+.message-header {
+  display: flex;
+}
+
+.name {
+  margin-right: 10px;
+  color: rgb(148, 148, 209);
+  font-weight: bold;
+}
+
+.date {
+  color: rgb(184, 184, 190);
+  font-weight: bold;
+}
+
+.form-row {
+  margin-top: 2px;
+}
+
+#bottom-area {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  background-color: rgb(23, 29, 43);
+}
+
+#message-box {
+  width: 85%;
+  padding-left: 20px;
+}
+
+.send-text-button {
+  width: 11%;
+}
+
+button {
+  background-color: rgb(8, 17, 59);
+  font-family: myNoto;
+  color: rgb(235, 231, 243);
+  border-radius: none;
+  font-size: 1em;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 200;
+}
+
+#message-text {
+  width: 90%;
+}
+
+a,
+a:hover,
+a:visited {
+  color: rgb(207, 207, 207);
+  text-decoration: none;
+}

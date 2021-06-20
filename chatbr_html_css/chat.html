@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChatBR</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/chatroom-style.css" />
+  </head>
+  <body>
+    <header>ChatBR</header>
+    <main>
+      <div id="chat-window">
+        <div id="head-section">
+          <div id="chatroom">Public ChatRoom 1</div>
+          <a href="./" id="button-leave" class="button">Leave Room</a>
+        </div>
+        <div id="body-section">
+          <div id="left-sidebar">
+            <div id="users">
+              <div id="user-title">Users</div>
+              <div id="list-users">
+                <div class="user">Bairou (admin)</div>
+                <div class="user">Bot1 (bot)</div>
+              </div>
+            </div>
+          </div>
+          <div id="text-area">
+            <div id="list-messages">
+              <div class="message">
+                <div class="message-header">
+                  <div class="name">Bairou (admin)</div>
+                  <div class="date">11:29pm</div>
+                </div>
+                <div class="message-content">Please remain polite!</div>
+              </div>
+              <!-- <div class="message">
+                <div class="message-header">
+                  <div class="name">botBR (bot)</div>
+                  <div class="date">11:29pm</div>
+                </div>
+                <div class="message-content">Please remain polite!</div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div id="bottom-area">
+          <form action="" method="get" class="send-message" id="message-form">
+            <div class="form-row" id="message-box">
+              <label for="text-message"></label>
+              <input
+                type="text"
+                id="message-text"
+                name="text-message"
+                placeholder="Enter Message"
+                minlength="1"
+                maxlength="100"
+                pattern=".{1,100}"
+                required
+                title="1 to 100 characters"
+              />
+            </div>
+            <div class="form-row submit-button send-text-button">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.1/qs.min.js"
+      integrity="sha512-aTKlYRb1QfU1jlF3k+aS4AqTpnTXci4R79mkdie/bp6Xm51O5O3ESAYhvg6zoicj/PD6VYY0XrYwsWLcvGiKZQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  min-height: 550px;
+}
+
+@font-face {
+  font-family: myNotoBold;
+  src: url(font/NotoSansKR-Bold.otf);
+}
+
+@font-face {
+  font-family: myNoto;
+  src: url(font/NotoSansKR-Regular.otf);
+}
+
+@font-face {
+  font-family: myNotoLight;
+  src: url(font/NotoSansKR-Light.otf);
+}
+
+body {
+  /*  background-color: rgb(248, 248, 248); */
+  background-color: rgb(13, 17, 29);
+  height: 90%;
+  font-family: myNoto;
+  color: rgb(222, 221, 224);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: max(10px, 1%);
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+  font-family: myNotoBold;
+  font-size: 3em;
+}
+
+.form-row {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  height: 90%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+#chatroom-dropdown,
+#username {
+  background-color: rgb(49, 58, 97);
+  font-family: myNoto;
+  color: rgb(235, 231, 243);
+  border-radius: 5px;
+  padding: 6px;
+}
+
+option {
+  padding: 2px;
+}
+
+::placeholder {
+  color: rgb(197, 195, 202);
+  font-family: myNoto;
+}
+
+#chatroom-dropdown:hover,
+#username:hover,
+button:hover {
+  background-color: rgb(59, 69, 112);
+}
+
+button {
+  background-color: rgb(8, 17, 59);
+  font-family: myNoto;
+  color: rgb(235, 231, 243);
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600;
+}
+
+#chat-window,
+#body-section,
+#text-area {
+  height: 100%;
+}

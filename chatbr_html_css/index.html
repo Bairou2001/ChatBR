@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChatBR</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>ChatBR</header>
+    <main>
+      <form action="chat.html" method="get" class="join-chat">
+        <div class="form-row chatroom">
+          <label for="chatroom">Chat Room:</label>
+          <select id="chatroom-dropdown" name="chatroom">
+            <option value="Public ChatRoom 1">Public ChatRoom 1</option>
+            <option value="Public ChatRoom 2">Public ChatRoom 2</option>
+            <option value="Public ChatRoom 3">Public ChatRoom 3</option>
+          </select>
+        </div>
+        <div class="form-row username">
+          <label for="username">User Name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your Username"
+            minlength="1"
+            maxlength="12"
+            pattern=".{1,12}"
+            required
+            title="1 to 12 characters"
+          />
+        </div>
+        <div class="form-row submit-button">
+          <button type="submit">Join Room</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
