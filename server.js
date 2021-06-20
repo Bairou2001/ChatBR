@@ -15,6 +15,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 // constants
+const admin = "Bairou (admin)";
 const botName = "botBR (bot)";
 
 // Serving static ressources, leading to our mainpage
@@ -28,6 +29,10 @@ io.on("connection", (socket) => {
     socket.join(user.room);
 
     // emit message to the client when that client connects
+    socket.emit(
+      "message",
+      formatMessage(admin, `Welcome to ${chatroom}! Please remain respectful!`)
+    );
     socket.emit(
       "message",
       formatMessage(botName, `Hi ${user.username}, welcome to ${chatroom}!`)
